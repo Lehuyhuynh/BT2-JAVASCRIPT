@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BT2</title>
+</head>
+<body>
+  <h3>Write a function that returns true if the first array is in the second array, otherwise returns false.</h3>
+  <script>
+    function canNest(array1,array2){
+     const max_val = array1.reduce(function(acc, element,index){
+  return (acc >= element) ? acc : element;
+}, 0);
+// const min_val = array1.reduce(function(acc, element,index){
+//   return (acc <= element) ? element : element;
+// }, 0);
+      
+console.log(array1);
+      console.log("max= ",max_val);
+     const array_1 = array1.sort(function (a,b){
+      return a - b;
+     })
+     console.log(array_1[array_1.length-1]);
+     console.log(max_1[0]);  
+    }
+    
+    console.log(canNest([2,4,6,3], [3,6,4]))
+  </script>
+</body>
+</html>
